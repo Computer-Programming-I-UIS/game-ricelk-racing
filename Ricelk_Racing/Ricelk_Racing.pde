@@ -1,7 +1,13 @@
+import ddf.minim.*;
+Minim minim;
+AudioPlayer player;
 int boton=30;
 PImage imagen_intro;
 void setup(){
   size(800,550);
+  minim = new Minim(this);
+  player = minim.loadFile("sonido_intro.mp3"); //Audio de intro
+  player.play();
   imagen_intro = loadImage("imagen_intro.jpg");
   image(imagen_intro,0,0);
   PFont font1;
