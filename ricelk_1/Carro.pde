@@ -18,7 +18,7 @@ class Carro {
   }
 
   void mover() {
-    volanterecto = loadImage("centrado.png");
+    volanterecto = loadImage("centrado1.png");
     volanterecto.resize(0, 810);
     image(volanterecto, 0, -110);
 
@@ -26,7 +26,7 @@ class Carro {
     if ( keyPressed && key == CODED) {
       if (keyCode == UP) {
         velocidad = velocidad +1;
-        volanterecto = loadImage("centrado.png");
+        volanterecto = loadImage("centrado1.png");
         volanterecto.resize(0, 810);
         image(volanterecto, 0, -110);
       }
@@ -35,13 +35,13 @@ class Carro {
     //***volante derecha1****
     if (keyPressed && key == CODED) {
       if (keyCode == RIGHT) {
-        derecha1 = loadImage("derecha1.png");
+        derecha1 = loadImage("derecha11.png");
         derecha1.resize(0, 810);
         image(derecha1, 0, -110);
         tiempo = tiempo +1;
       }
       if  (tiempo >= 6) {
-        derecha2 = loadImage("derecha2.png");
+        derecha2 = loadImage("derecha12.png");
         derecha2.resize(0, 810);
         image(derecha2, 0, -110);
         if (keyCode != RIGHT) {
@@ -56,13 +56,13 @@ class Carro {
     //*******volanteizquierda1 ****
     if (keyPressed && key == CODED) {
       if (keyCode == LEFT) {
-        izquierda1 = loadImage("izquierda1.png");
+        izquierda1 = loadImage("izquierda11.png");
         izquierda1.resize(0, 810);
         image(izquierda1, 0, -110);
         tiempo2 = tiempo2 +1;
       }
       if  (tiempo2 >= 6) {
-        izquierda2 = loadImage("izquierda2.png");
+        izquierda2 = loadImage("izquierda12.png");
         izquierda2.resize(0, 810);
         image(izquierda2, 0, -110);
         if (keyCode != LEFT) {

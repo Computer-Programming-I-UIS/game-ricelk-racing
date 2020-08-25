@@ -1,5 +1,5 @@
 Carro car;
-int maxImages=114;
+int maxImages=302;
 int imageIndex=0;
 PImage[] images=new PImage[maxImages];
 
@@ -16,10 +16,10 @@ PImage izquierda1;
 PImage izquierda2;
 PImage pista1;
 int a = -200;
-int b = -150;
+int b = -200;
 int vel = 15;
 int tiempo = 0;
-float velocidadf = 15;
+float velocidadf = 5;
 int x;
 int y;
 int velocidad;
@@ -34,7 +34,7 @@ void setup() {
 
 
   for (int i =0; i < images.length; i++) {
-    images[i] = loadImage("frame_" + i +".PNG" );
+    images[i] = loadImage("fr_" + i +".PNG" );
   }
   // frameRate(velocidadf);
 }
@@ -50,7 +50,7 @@ void draw () {
     velocidadf = velocidadf + 15;
     frameRate(int(velocidadf));
   } else if (frenar) {
-      velocidadf = velocidadf - 5;
+      velocidadf = velocidadf - 3;
     frameRate(velocidadf);
   }
   car.mover();
